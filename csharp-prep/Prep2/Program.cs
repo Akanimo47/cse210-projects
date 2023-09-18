@@ -30,15 +30,15 @@ class Program
             letter = "F";
         }
 
-        Console.WriteLine($"Your grade is: {letter}");
+        Console.WriteLine($"Your grade is: {letter} ");
 
         if (percent >= 70)
         {
-            Console.WriteLine("Congratulations you passed!");
+            Console.WriteLine("Congratulations you passed! ");
         }
         else
         {
-            Console.WriteLine("Better luck try hareder next time!");
+            Console.WriteLine("Better luck try hareder next time! ");
         }
     }
 }
