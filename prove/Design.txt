@@ -1,0 +1,34 @@
+CLASSES:
+- Program
+- Journal
+- Entry
+- PromptGenerator
+
+BEHAVIORS:
+Program:
+> static void Main(string[] args): It will run the program, it will display the main menu interface while interacting with the user and calling other classes and functions.
+Also, in the same function, it will save and load files.
+
+Journal:
+> public void displayJournal(): It wil iterate throught Entry class and print the data stored in _entries
+
+Entry:
+> public void displayEntry(): It will use the data stored in the class atributes in order to print the entry. It will format the entry as {DATE} - Prompt: {PROMPT} {ANSWER}.
+
+PromptGenerator:
+> public string getPrompt(): It will use the attribute list _prompts and pick a random prompt from the list, to return it.
+
+ATTRIBUTES:
+Program:
+None
+
+Journal:
+> List<Entry> _entries: a list taken from Entry class in order to get all entries by user
+
+Entry:
+>_date: as the program split the entries as strings, this attribute will store de date
+>_prompt: as the program split the entries as strings, this attribute will store de prompt
+>_answer: as the program split the entries as strings, this attribute will store de answer
+
+PromptGenerator:
+List<string> _prompts: it will store all the prompts. The program will pick a random prompt and display it to the user
