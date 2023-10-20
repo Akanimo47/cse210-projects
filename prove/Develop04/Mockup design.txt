@@ -1,0 +1,46 @@
+CLASSES:
+> Program (menu and interface)
+> Activity
+> BreathingActivity
+> ReflectingActivity
+> ListingActivity
+
+BEHAVIORS:
+> Activity: (super class)
+- DisplayStartMsg()
+- DisplayEndMsg()
+- PauseShowSpinner()
+- PauseShowTimer()
+
+> BreathingActivity
+- DisplayBreatheIn()
+- DisplayBreatheOut()
+
+> ReflectingActivity
+- GetPrompt()
+- GetQuestion()
+- DisplayPrompt()
+- DisplayQuestion()
+
+> ListingActivity
+- GetPrompt()
+- DisplayPrompt()
+- ShowNumberOfList()
+
+ATTRIBUTES:
+> Activity:
+- private string _name
+- private string _description
+- private int _duration
+
+> BreathingActivity
+- private string _breathText
+
+> ReflectingActivity
+- private list _prompts
+- private list _questions
+
+> ListingActivity
+- private list _prompts
+- private list _answers
+- private int _numberOfAnswers
